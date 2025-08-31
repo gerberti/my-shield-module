@@ -37,7 +37,7 @@
 / {
     default_transform: keymap_transform0 {
         compatible = "zmk,matrix-transform";
-        columns = <2>;
+        columns = <4>;
         rows = <2>;
         map = <
         //  LKey 1 |LKey 2       RKey 1 |RKey 2
