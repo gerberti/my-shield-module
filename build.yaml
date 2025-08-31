@@ -5,7 +5,7 @@
 # pass flags to the build command, `snippet` to add a Zephyr snippet, and
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 #
-board: [ "Splitomat" ]
+board: [ "splitomat" ]
 shield: [ "my_keyboard_left", "my_keyboard_right" ]
 # include:
 #   - board: bdn9_rev2
