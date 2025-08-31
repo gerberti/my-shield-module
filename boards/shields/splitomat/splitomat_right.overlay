@@ -1,5 +1,13 @@
 #include "splitomat.dtsi"
 
+// Label of the kscan node in the dtsi
+&kscan0 {
+    col-gpios
+        = <&xiao_d 4 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 5 GPIO_ACTIVE_HIGH>
+        ;
+};
+
 &default_transform { // Offset of 3 because the left side has 3 columns
     col-offset = <2>;
 };
