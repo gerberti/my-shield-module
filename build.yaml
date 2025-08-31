@@ -5,8 +5,8 @@
 # pass flags to the build command, `snippet` to add a Zephyr snippet, and
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 #
-board: [ "splitomat" ]
-shield: [ "my_keyboard_left", "my_keyboard_right" ]
+# board: [ "splitomat" ]
+# shield: [ "my_keyboard_left", "my_keyboard_right" ]
 # include:
 #   - board: bdn9_rev2
 #   - board: nice_nano_v2
@@ -18,3 +18,8 @@ shield: [ "my_keyboard_left", "my_keyboard_right" ]
 #     artifact-name: corne_left_with_studio
 #
 ---
+include:
+  - board: seeeduino_xiao_ble
+    shield: my_keyboard_left
+  - board: seeeduino_xiao_ble
+    shield: my_keyboard_right
