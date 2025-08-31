@@ -20,6 +20,6 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: my_keyboard_left
+    shield: splitomat_left
   - board: seeeduino_xiao_ble
-    shield: my_keyboard_right
+    shield: splitomat_right
