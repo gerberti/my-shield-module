@@ -1,0 +1,11 @@
+file_format: "1"
+id: splitomat
+name: Splitomat
+type: shield
+url: https://github.com/gerberti/my-shield-module
+requires: [seeed_xiao]
+features:
+  - keys
+#siblings:
+#  - corne_left
+#  - corne_right
