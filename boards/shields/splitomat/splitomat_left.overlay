@@ -1,9 +1,10 @@
 #include "splitomat.dtsi"
 
 &gpio0 {
-    charger_ctrl_init: charger_ctrl_init {
-        compatible = "zephyr,gpio-init";
-        gpios = <13 1>;    /* GPIO0 pin 13, driven low */
-        line-name = "charge-current-set";
+    fastbatcharge: fast-battery-charge {
+        gpio-hog;
+        gpios = <13 GPIO_ACTIVE_HIGH>;
+        output-low;
+        line-name = "Fast Battery Charge";
     };
 };
