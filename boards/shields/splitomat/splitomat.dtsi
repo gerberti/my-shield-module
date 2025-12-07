@@ -77,8 +77,8 @@
 		compatible = "gpio-hogs";
 
 		charge_current_100ma: charge_current_100ma {
-			gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
-			output-low;
+			gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
+			output-high;
 			line-name = "charge-current-set";
 		};
 	};
