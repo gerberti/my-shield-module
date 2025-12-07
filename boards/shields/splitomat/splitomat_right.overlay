@@ -3,3 +3,12 @@
 &default_transform { // Offset of 3 because the left side has 3 columns
     col-offset = <2>;
 };
+
+&gpio0 {
+    fastbatcharge: fast-battery-charge {
+        gpio-hog;
+        gpios = <13 GPIO_ACTIVE_HIGH>;
+        output-low;
+        line-name = "Fast Battery Charge";
+    };
+};
