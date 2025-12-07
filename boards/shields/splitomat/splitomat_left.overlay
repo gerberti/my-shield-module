@@ -1,1 +1,9 @@
 #include "splitomat.dtsi"
+
+&gpio0 {
+    charger_ctrl_init: charger_ctrl_init {
+        compatible = "zephyr,gpio-init";
+        gpios = <13 GPIO_OUTPUT_LOW>;    /* GPIO0 pin 13, driven low */
+        line-name = "charge-current-set";
+    };
+};
