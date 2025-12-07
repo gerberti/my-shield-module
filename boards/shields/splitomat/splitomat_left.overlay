@@ -1,13 +1,1 @@
 #include "splitomat.dtsi"
-
-&gpio0 {
-    gpio_hogs {
-        compatible = "gpio-hogs";
-
-        charge_current_100ma: charge_current_100ma {
-            gpios = <13 GPIO_ACTIVE_LOW>;   /* GPIO0 pin 13 */
-            line-name = "charge-current-set";
-            output-low;                     /* Drive low at boot */
-        };
-    };
-};

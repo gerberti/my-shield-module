@@ -72,3 +72,9 @@
     };
 };
 
+/ {
+    charger_ctrl_init: charger_ctrl_init {
+        compatible = "zephyr,gpio-init";
+        gpios = <&gpio0 13 GPIO_OUTPUT_ACTIVE>;
+    };
+};
