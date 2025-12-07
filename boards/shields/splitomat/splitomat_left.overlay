@@ -1,1 +1,17 @@
 #include "splitomat.dtsi"
+
+&pinctrl {
+    charger_ctrl: charger_ctrl {
+        group1 {
+            psels = <NRF_PSEL(GPIO, 0, 13)>;
+            pull = "none";
+            output-low;       /* Force 100 mA charging */
+        };
+    };
+};
+
+/* Apply the pin configuration at boot */
+&gpio0 {
+    pinctrl-0 = <&charger_ctrl>;
+    pinctrl-names = "default";
+};
