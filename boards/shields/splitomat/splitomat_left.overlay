@@ -1,17 +1,13 @@
 #include "splitomat.dtsi"
 
-&pinctrl {
-    charger_ctrl: charger_ctrl {
-        group1 {
-            psels = <13>;
-            pull = "none";
-            output-low;       /* Force 100 mA charging */
+&gpio0 {
+    gpio_hogs {
+        compatible = "gpio-hogs";
+
+        charge_current_100ma: charge_current_100ma {
+            gpios = <13 GPIO_ACTIVE_LOW>;   /* GPIO0 pin 13 */
+            line-name = "charge-current-set";
+            output-low;                     /* Drive low at boot */
         };
     };
-};
-
-/* Apply the pin configuration at boot */
-&gpio0 {
-    pinctrl-0 = <&charger_ctrl>;
-    pinctrl-names = "default";
 };
