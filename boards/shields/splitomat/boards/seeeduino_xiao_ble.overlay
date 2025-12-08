@@ -9,6 +9,7 @@
     };
 };
 
+/*
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
@@ -23,14 +24,17 @@
         };
     };
 };
+*/
 
-&spi0 {
+&xiao_spi {
     compatible = "nordic,nrf-spim";
     status = "okay";
 
-    pinctrl-0 = <&spi0_default>;
+    /*
+	pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
+	*/
 
     led_strip: ws2812@0 {
         compatible = "worldsemi,ws2812-spi";
