@@ -11,8 +11,8 @@
             // |     A     |     B     |     C     |
             // |     D     |     E     |     F     |
             bindings = <
-                &kp A    &kp B    &kp E    &kp F
-                &kp C    &kp D    &kp G    &kp H
+                &rgb_ug RGB_TOG    &kp B    &kp E    &kp F
+                &rgb_ug RGB_EFF    &kp D    &kp G    &kp H
             >;
         };
     };
