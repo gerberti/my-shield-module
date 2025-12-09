@@ -9,7 +9,7 @@
     };
 };
 
-&xiao_spi {
+&spi0 {
     status = "okay";
 
     led_strip: ws2812@0 {
