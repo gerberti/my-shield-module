@@ -10,7 +10,6 @@
 };
 
 &xiao_spi {
-    compatible = "nordic,nrf-spim";
     status = "okay";
 
     led_strip: ws2812@0 {
