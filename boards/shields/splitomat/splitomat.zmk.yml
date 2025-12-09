@@ -7,6 +7,7 @@ requires: [seeeduino_xiao_ble]
 features:
   - keys
   - ble
+  - underglow
 siblings:
   - splitomat_left
   - splitomat_right
