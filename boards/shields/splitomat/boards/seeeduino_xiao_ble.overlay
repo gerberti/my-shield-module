@@ -49,6 +49,8 @@
     };
 };
 
+&xiao_spi { status = "okay"; };
+
 / {
     chosen {
         zmk,underglow = &led_strip;
