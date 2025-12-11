@@ -19,9 +19,9 @@
 #
 ---
 include:
-  - board: xiao_ble
+  - board: seeeduino_xiao_ble
     shield: splitomat_left
     snippet: zmk-usb-logging
-  - board: xiao_ble
+  - board: seeeduino_xiao_ble
     shield: splitomat_right
     snippet: zmk-usb-logging
