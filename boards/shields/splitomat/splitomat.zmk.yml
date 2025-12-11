@@ -8,8 +8,6 @@ features:
   - keys
   - ble
   - underglow
-  - xiao_spi
-  - spi
 siblings:
   - splitomat_left
   - splitomat_right
