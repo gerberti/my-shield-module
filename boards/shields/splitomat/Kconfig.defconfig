@@ -16,9 +16,6 @@ config ZMK_SPLIT
 
 endif
 
-config SPI
-    default y
-
 CONFIG_USB=y
 CONFIG_ZMK_USB=y
 CONFIG_BT=y
