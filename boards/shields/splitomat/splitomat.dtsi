@@ -123,7 +123,7 @@
     chosen {
         zmk,physical-layout = &physical_layout0;
         // Other chosen items
-		lzmk,underglow = &led_strip;
+		zmk,underglow = &led_strip;
     };
 };
 
