@@ -17,7 +17,7 @@
 //			;
 //    };
 //};
-/*
+
 / {
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
@@ -65,7 +65,6 @@
         transform = <&default_transform>; // Label of the matrix transform for this layout
     };
 };
-*/
 
 &gpio0 {
     fastbatcharge: fast-battery-charge {
@@ -122,7 +121,7 @@
 
 / {
     chosen {
-        //zmk,physical-layout = &physical_layout0;
+        zmk,physical-layout = &physical_layout0;
         // Other chosen items
 		zmk,underglow = &led_strip;
     };
