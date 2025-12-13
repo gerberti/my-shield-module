@@ -3,10 +3,11 @@ id: splitomat
 name: Splitomat
 type: shield
 url: https://github.com/gerberti/my-shield-module
-requires: [seeeduino_xiao_ble]
+requires: [xiao_ble]
 features:
   - keys
   - ble
+  - underglow
 siblings:
   - splitomat_left
   - splitomat_right
